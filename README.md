@@ -18,6 +18,18 @@ Install in the standard EventGhost plugin style. Everything you need is in the b
 
 Here is the list of actions available:
 
+* **AutoHotKey Command** - Runs a one-line ahk command.
+* **AutoHotKey Script** - Runs user-entered ahk code.
+* **AutoHotKey Files** - Runs an ahk file.
+* **[AutoHotKey Message Box](http://www.autohotkey.com/docs/commands/MsgBox.htm)** - Creates an ahk message box. There are several different button styles and each button triggers an event.
+* **[AutoHotKey SoundBeep](http://www.autohotkey.com/docs/commands/SoundBeep.htm)** - Emits a tone from the PC speaker.
+* **[AutoHotKey Block Input](http://www.autohotkey.com/docs/commands/BlockInput.htm)** - Blocks user input. Freezes the mouse and ignores all keyboard input until the timeout is reached or "BlockInput Off" action is executed. Only works if Eventghost is ran as admin.
+* **BlockInput Off** - Gives control back to the user after "Block Input" is executed.
+* **[AutoHotKey Click Image](http://www.autohotkey.com/docs/commands/ImageSearch.htm)** - Searches the screen for an image provided by the user. If the image is found the user can choose to have it trigger an event with the coordinates in the payload and/or click the mouse at the coordinates. Window with image must be active.
+* **[AutoHotKey Input Box](http://www.autohotkey.com/docs/commands/InputBox.htm)** - Creates an input box the prompts the user. The entered data is set to a variable.
+
+If you want to use `eg.` variables in a script, wrap them in `#` characters, such as: `#eg.variable#`
+
 ## Warnings, Problems, and Workarounds
 
 Don't call `ExitApp` from your script, or things will break.
